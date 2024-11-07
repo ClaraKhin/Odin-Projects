@@ -1,0 +1,160 @@
+:root {
+  --background: #1f2937;
+  --mainTextColor: #f9faf8;
+  --secondaryTextColor: #e5e7eb;
+  --logoTextColor: #f9faf8;
+  --buttonColor: #3882f6;
+  --informationHeaderText: #1f2937;
+  --quoteSectionBackground: #e5e7eb;
+  --quoteText: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header,
+.hero,
+footer {
+  background-color: var(--background);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px;
+}
+nav > a {
+  text-decoration: none;
+  color: var(--logoTextColor);
+  font-size: 24px;
+}
+nav > ul {
+  display: flex;
+}
+ul > li {
+  margin: 0 20px;
+  list-style: none;
+}
+li > a {
+  text-decoration: none;
+  color: var(--secondaryTextColor);
+  font-size: 18px;
+}
+
+.hero {
+  padding: 35px;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-content > h1 {
+  font-size: 48px;
+  color: var(--mainTextColor);
+  font-weight: 900;
+}
+.hero-content > p {
+  font-size: 18px;
+  color: var(--secondaryTextColor);
+}
+.hero-content > button {
+  background-color: var(--buttonColor);
+  color: var(--mainTextColor);
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.hero-container > img {
+  width: 400px;
+  height: 300px;
+}
+
+.info {
+  padding: 35px;
+}
+.info > h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--informationHeaderText);
+}
+.info-container {
+  display: flex;
+  margin: 35px auto;
+  align-items: center;
+  justify-content: center;
+}
+.info-container > .info-content {
+  text-align: center;
+  width: 230px;
+}
+.info-container > .info-content > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 30px;
+}
+.info-container > .info-content > p {
+  color: var(--informationHeaderText);
+  font-size: 18px;
+}
+.quote {
+  background-color: var(--quoteSectionBackground);
+  padding: 35px;
+}
+.quote > div {
+  margin: 0 auto;
+  width: 50%;
+}
+.quote > div > q {
+  font-size: 36px;
+  font-style: italic;
+  color: var(--quoteText);
+}
+.quote > div > p {
+  text-align: end;
+}
+
+.cta {
+  padding: 38px;
+}
+.cta > .cta-container {
+  background-color: var(--buttonColor);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.cta-container > .cta-content > h3 {
+  color: var(--mainTextColor);
+  font-size: 20px;
+}
+.cta-container > .cta-content > p {
+  color: var(--secondaryTextColor);
+  font-size: 18px;
+}
+.cta-container > button {
+  padding: 10px;
+  width: 100px;
+  background-color: var(--buttonColor);
+  border: 1px solid var(--mainTextColor);
+  border-radius: 10px;
+  color: var(--mainTextColor);
+}
+footer {
+  padding: 20px;
+}
+footer > p {
+  color: var(--secondaryTextColor);
+  text-align: center;
+  font-size: 15px;
+}
