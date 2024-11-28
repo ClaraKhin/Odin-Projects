@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div>
+      <form>
+        <fieldset class="personal">
+          <legend>Personal Information</legend>
+          <label for="first_name">First Name : </label>
+          <input type="text" name="first_name" id="first_name" />
+          <label for="last_name">Last Name :</label>
+          <input type="text" name="last_name" id="last_name" />
+          <div class="gender">
+            <div class="female">
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Female</label>
+            </div>
+            <div class="male">
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Male</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="contact">
+          <legend>Contact Details</legend>
+          <label for="email">Email Address :</label>
+          <input type="email" name="email" id="email" />
+          <label for="phone">Phone Number :</label>
+          <input type="tel" name="phone" id="phone" />
+          <label for="street">Street :</label>
+          <input type="text" name="address" id="address" />
+          <label for="city">City :</label>
+          <input type="text" name="city" id="city" />
+          <label for="country">Country :</label>
+          <input type="text" name="country" id="country" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: block;
+  padding: 1rem;
+  margin: auto 30%;
+}
+
+fieldset.personal,
+.contact {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 1rem 0;
+  border-radius: 30px;
+}
+fieldset > legend {
+  text-align: center;
+  font-size: 20px;
+}
+fieldset > label {
+  margin: 0 30px 0 30px;
+  font-size: 17px;
+}
+fieldset > input {
+  margin: 10px 30px 10px 30px;
+  width: 500px;
+  padding: 15px;
+  border-top: none;
+  border-right: none;
+  border-bottom-left-radius: 30px;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+fieldset > input:focus {
+  outline: none;
+  font-size: 15px;
+}
+
+fieldset.personal > div.gender {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 25px 0;
+}
+fieldset.personal > div.gender > div.female,
+div.male {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset.personal > div.gender > div.female > label,
+div.male > label {
+  font-size: 17px;
+}
+fieldset.personal > div.gender > div.female > input,
+div.male > input {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
